@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastItem component should match snapshot 1`] = `
+<div>
+  <div
+    class="cardTemperature"
+  >
+    26
+  </div>
+</div>
+`;

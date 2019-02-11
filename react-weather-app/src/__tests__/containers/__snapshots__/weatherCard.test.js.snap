@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherCard bottom portion... should match snapshot 1`] = `
+<div>
+  <div
+    class="cardBottomPortion"
+  >
+    <div
+      class="cardDetail"
+    >
+      <ul
+        class="forecastsWrapper"
+      >
+        <li
+          class="forecastItem"
+        >
+          <span
+            class="forecastIcon wi wi-wu-snow"
+          />
+          <div
+            class="cardTemperature"
+          >
+            -2
+          </div>
+          <div
+            class="cardTemperature"
+          >
+            -6
+          </div>
+          <p
+            class="forecastDay"
+          >
+            Sat
+          </p>
+        </li>
+        <li
+          class="forecastItem"
+        >
+          <span
+            class="forecastIcon wi wi-wu-snow"
+          />
+          <div
+            class="cardTemperature"
+          >
+            -2
+          </div>
+          <div
+            class="cardTemperature"
+          >
+            -6
+          </div>
+          <p
+            class="forecastDay"
+          >
+            Sun
+          </p>
+        </li>
+        <li
+          class="forecastItem"
+        >
+          <span
+            class="forecastIcon wi wi-wu-snow"
+          />
+          <div
+            class="cardTemperature"
+          >
+            -2
+          </div>
+          <div
+            class="cardTemperature"
+          >
+            -6
+          </div>
+          <p
+            class="forecastDay"
+          >
+            Mon
+          </p>
+        </li>
+        <li
+          class="forecastItem"
+        >
+          <span
+            class="forecastIcon wi wi-wu-snow"
+          />
+          <div
+            class="cardTemperature"
+          >
+            -2
+          </div>
+          <div
+            class="cardTemperature"
+          >
+            -6
+          </div>
+          <p
+            class="forecastDay"
+          >
+            Tue
+          </p>
+        </li>
+        <li
+          class="forecastItem"
+        >
+          <span
+            class="forecastIcon wi wi-wu-snow"
+          />
+          <div
+            class="cardTemperature"
+          >
+            -2
+          </div>
+          <div
+            class="cardTemperature"
+          >
+            -6
+          </div>
+          <p
+            class="forecastDay"
+          >
+            Wed
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WeatherCard container... should match snapshot 1`] = `
+<div>
+  <div
+    class="card "
+  >
+    <div
+      class="cardUpperPortion"
+      style="background-image: url(http://example.com/image.jpg);"
+    >
+      <div
+        class="cardInfo"
+      >
+        <div
+          class="cardTemperature"
+        >
+          30
+        </div>
+        <div
+          class="currentCondition"
+        >
+          clear
+        </div>
+      </div>
+      <h2
+        class="cityNameTitle"
+      >
+        somewhere
+      </h2>
+    </div>
+    <div
+      class="cardBottomPortion"
+    >
+      <div
+        class="cardDetail"
+      >
+        <ul
+          class="forecastsWrapper"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WeatherCard top component... should match snapshot 1`] = `
+<div>
+  <div
+    class="cardUpperPortion"
+    style="background-image: url(/assets/images/testimage.jpg);"
+  >
+    <div
+      class="cardInfo"
+    >
+      <div
+        class="cardTemperature"
+      >
+        10
+      </div>
+      <div
+        class="currentCondition"
+      >
+        Clear
+      </div>
+    </div>
+    <h2
+      class="cityNameTitle"
+    >
+      Somewhere
+    </h2>
+  </div>
+</div>
+`;

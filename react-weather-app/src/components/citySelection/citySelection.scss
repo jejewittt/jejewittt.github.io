@@ -1,0 +1,45 @@
+header {
+  label {
+    color: #fff;
+    align-self: center;
+    margin-right: 1em;
+    font-size: 1.5em;
+  }
+
+  .selectDropdown {
+    position: relative;
+    background-color: #e6e6e6;
+    width: auto;
+    float: left;
+    max-width: 100%;
+    border-radius: 2px;
+    select {
+      font-size: 1em;
+      font-weight: 300;
+      max-width: 100%;
+      padding: 8px 24px 8px 10px;
+      border: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+        -moz-appearance: none;
+              appearance: none;
+      &:active,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      margin-top: -2px;
+      right: 8px;
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #aaa;
+    }
+  }
+}

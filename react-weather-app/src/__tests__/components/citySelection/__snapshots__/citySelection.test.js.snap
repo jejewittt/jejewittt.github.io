@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentCondition component should match snapshot 1`] = `
+<div>
+  <header>
+    <label
+      for="citySelection"
+    >
+      Select a city:
+    </label>
+    <div
+      class="selectDropdown"
+    >
+      <select
+        id="citySelection"
+      >
+        <option
+          value="edmonton"
+        >
+          Edmonton
+        </option>
+        <option
+          value="vancouver"
+        >
+          Vancouver
+        </option>
+        <option
+          value="calgary"
+        >
+          Calgary
+        </option>
+        <option
+          value="montreal"
+        >
+          Montreal
+        </option>
+        <option
+          value="toronto"
+        >
+          Toronto
+        </option>
+      </select>
+    </div>
+  </header>
+</div>
+`;

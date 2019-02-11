@@ -1,0 +1,10 @@
+* {
+  &,&::before,&::after {box-sizing:border-box}
+  user-select: none;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #37474F;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cityNameTitle component... should match snapshot 1`] = `
+<div>
+  <h2
+    class="cityNameTitle"
+  >
+    Edmonton
+  </h2>
+</div>
+`;

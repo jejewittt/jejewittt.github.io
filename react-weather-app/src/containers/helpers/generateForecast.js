@@ -21,6 +21,14 @@ export default (forecast) => {
 
   dailyForecasts = forecast.map((dayInfo, index) => {
     const iconType = dayInfo.weather[0].main.toLowerCase();
+    console.log('I was triggered during render')
+
+
+
+
+
+
+
     return (
       <ForecastItem
         key={index}
@@ -33,4 +41,7 @@ export default (forecast) => {
   });
 
   return dailyForecasts;
+
+
+
 }

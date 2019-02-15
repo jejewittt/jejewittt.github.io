@@ -33,28 +33,34 @@ import { getWeatherByCity, getForecastByCity } from './utils/network';
 
 import './App.scss';
 
-const DEFAULT_CITY = 'edmonton';
+// const DEFAULT_CITY = 'Edmonton';
 
 class App extends Component {
   state = {
     city: '',
     temperature: '',
+    measured: '',
     currentCondition: '',
-    forecast: [],
+    photo: '',
+    mintemp: '',
+    maxtemp: ''
   };
 
-  changeDisplayCity(city) {
-    getWeatherByCity(city).then((response) => {
+  changeDisplayCity() {
+    getWeatherByCity().then((response) => {
       console.log(response)
       this.setState({
-        city: response.data.name,
-        temperature: Math.round(response.data.main.temp),
-        currentCondition: response.data.weather[0].description,
-        cityImage: response.data.photo
+        city: response.data[0].city,
+        temperature: Math.round(response.data[0].temperature),
+        currentCondition: response.data[0].currentcondition,
+        photo: response.data[0].photo,
+        maxtemp: response.data[0].maxtemp,
+        mintemp: response.data[0].mintemp
+
       })
     });
 
-    getForecastByCity(city).then((response) => {
+    getForecastByCity().then((response) => {
       this.setState({
         forecast: response.data.list
       })
@@ -62,7 +68,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.changeDisplayCity(DEFAULT_CITY);
+    this.changeDisplayCity();
   }
 
   onCitySelectionChanged(event) {
@@ -70,14 +76,17 @@ class App extends Component {
   }
 
   render() {
+  	console.log("test")
+  	console.log(this.state.photo)
     return (
       <div className="App">
         <WeatherCard
           city={this.state.city}
           temperature={this.state.temperature}
           currentCondition={this.state.currentCondition}
-          cityImage={this.state.cityImage}
-          forecast={this.state.forecast}
+          photo={this.state.photo}
+          maxtemp={this.state.maxtemp}
+          mintemp={this.state.mintemp}
         >
         </WeatherCard>
       </div>

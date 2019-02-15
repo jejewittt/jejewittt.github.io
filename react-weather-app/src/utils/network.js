@@ -11,12 +11,16 @@ import axios from 'axios';
 
 import { CITY_WEATHER_URL, CITY_FORECAST_URL } from '../config/endpoints';
 
-export const getWeatherByCity = (city) => {
-  const url = CITY_WEATHER_URL + city;
-  return axios.get(url)
+// app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
+
+
+
+export const getWeatherByCity = () => {
+  const url = "https://cors.io/?http://199.116.235.137:8080/weather/";
+  return axios.get(url); 
 };
 
 export const getForecastByCity = (city) => {
-  const url = CITY_FORECAST_URL + city;
+  const url = "https://cors.io/?http://199.116.235.137:8080/weather/";
   return axios.get(url);
 };
